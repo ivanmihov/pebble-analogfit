@@ -85,6 +85,8 @@ Pebble.addEventListener('ready', function(e) {
 	//console.log('userAgent: ' + (navigator.userAgent || "[invalid userAgent]"));
 
 	// Test for old or new battery API
+	console.log("test");
+	console.log(navigator);
 	if (navigator.battery) {
 		init(navigator.battery);
 	} else if (navigator.getBattery) {
